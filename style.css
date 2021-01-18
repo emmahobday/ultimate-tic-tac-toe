@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  /* background-color: rgba(255, 192, 203, 0.598); */
+  background-color: #06d6a0;
+  color: #26547c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.area {
+  width: 80vw;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Sigmar One', cursive;
+  font-size: 36px;
+  margin: 10px 0px
+}
+
+.turn {
+  height: 46px;
+  background: #fcfcfc;
+  margin: 20px 0px;
+  border-radius: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.turn p {
+  font-size: 30px;
+}
+
+.grid {
+  width: 450px;
+  height: 450px;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: white;
+}
+
+.bigCell {
+  border: 2px solid #26547c;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.smallCell {
+  border: 1px solid #26547c;
+  background-color: transparent;
+}
+
+.X, .O {
+  color: transparent;
+}
+
+.grid:hover {
+  cursor: pointer;
+}
+
+.no {
+  cursor: not-allowed;
+}
+
+
+.xwon {
+  /* background-color: purple !important; */
+  background-image: url(img/x.png);
+  background-size: cover;
+  /* background-color: peachpuff !important; */
+  background-color: #ffd166 !important;
+}
+
+.owon {
+  /* background-color: green !important; */
+  background-image: url(img/o.png);
+  background-size: cover;
+  background-color: #ef476f !important;
+}
+
+.xturn {
+  border: 5px solid #ffd166;
+}
+
+.oturn {
+  border: 5px solid #ef476f;
+}
+
+/* div.smallCell:not(.no):hover {
+  background-color: gainsboro;
+} */
+
+.ohover:not(.no):hover {
+  background-color: #ef476f;
+}
+
+.xhover:not(.no):hover {
+  background-color: #ffd166;
+}
